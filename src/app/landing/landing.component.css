@@ -1,0 +1,21 @@
+.container{
+    margin-top: 8rem;
+}
+
+.btn{
+    margin-left: 12rem;
+    margin-top: 10rem;
+    width: 15rem;
+    height: 4rem;
+    padding: 0.8rem 2rem;
+    background-color: #ff7e67;
+    color: #ffffff;
+    font-size: 1.5rem;
+    border-radius: 1.5rem;
+}
+
+#tagline{
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: medium;
+}

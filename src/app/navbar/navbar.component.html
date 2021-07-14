@@ -1,0 +1,35 @@
+<nav class="navbar navbar-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">COLLAB</a>
+
+        <div class="dropdown" *ngIf="(isLoggedIn | async) as loggedIn">
+            <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">
+                <i class="bi bi-person-circle"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                <li>
+                    <a class="btn dropdown-item" (click)="logout()">
+                        <i class="bi bi-box-arrow-right"></i>
+                        Logout
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- <nav class="transparent z-depth-0">
+    <div class="nav-wrapper container">
+        <a href="#" class="brand-logo black-text">COLLAB</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li>
+                <a class="dropdown-trigger" href="#!" data-target="dropdown1">
+                    <i id="user-icon" class="material-icons primary-pink-text">account_circle</i>
+                    <ul id="dropdown1" class="dropdown-content">
+                        <li><a href="#!">Logout</a></li>
+                      </ul>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav> -->

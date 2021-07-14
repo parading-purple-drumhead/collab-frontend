@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1">
+        <div *ngFor="let post of posts" class="col">
+            <div [id]="post._id" class="card shadow-sm">
+                <img [src]="post.cover">
+                <div class="post-title">
+                    <h5 class="text-truncate">{{post.title}}</h5>
+                    <h6>{{post.type}}</h6>
+                    <button class="btn primary-outline-button btn-fab-card float-end"><i
+                            class="bi bi-bookmark"></i></button>
+                </div>
+                <div class="card-body">
+                    <br>
+                    <span *ngFor="let tech of post.tech_stack" class="card-text" style="margin: 0;">
+                        <span class="card-chip">{{tech}}</span>&nbsp;
+                    </span>
+                    <p class="limit">{{post.description}}</p>
+                    <span><b>Applications Close On:</b> {{post.last_date}}</span>
+                    <br><br>
+                    <a href="#" class="float-start primary-pink-text">Report</a>
+                    <a href="#" class="btn primary-outline-button float-end">Expand</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
