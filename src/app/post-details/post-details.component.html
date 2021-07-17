@@ -1,0 +1,74 @@
+<div class="container">
+    <div class="card" style="margin-bottom: 5rem;">
+        <img class="cover-img" [src]="post.cover">
+        <div class="post-title">
+            <div class="row" style="height: 100%;">
+                <div class="col-lg-9">
+                    <h3>{{post.title}}</h3>
+                    <h5>{{post.type}}</h5>
+                    <h6>Applications Close On: {{post.last_date}}</h6>
+                </div>
+                <div class="col-lg-3">
+                    <div class="row align-items-center justify-content-around" style="height: 100%;">
+                        <button id="save-button" class="btn primary-outline-button col-lg-5">
+                            <i class="bi bi-bookmark"></i>
+                            Save
+                        </button>
+                        <button id="apply-button" class="btn col-lg-5">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-body" style="padding: 2rem 2rem;">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h5 style="margin-bottom: 2rem;">Tech Stack</h5>
+                    <span *ngFor="let tech_stack of post.tech_stack">
+                        <span class="card-chip">{{tech_stack}}</span> &nbsp;
+                    </span>
+                    <hr style="border-bottom: 0px;opacity: .5;margin: 2rem 0rem;">
+                    <h5>{{post.type}} Description</h5>
+                    <p>{{post.description}}</p>
+                    <hr style="border-bottom: 0px;opacity: .5;margin: 2rem 0rem;">
+                    <h4>Roles and Responsibilities</h4>
+                    <br>
+                    <div *ngFor="let role of post.roles">
+                        <h5>{{role.role_title}}</h5>
+                        <p>{{role.responsibilities}}</p>
+                    </div>
+
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title">Created by</h6>
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <img [src]="user.avatar"
+                                        class="img-fluid" style="border-radius: 50%;">
+                                </div>
+                                <div class="col-lg-9">
+                                    <span style="font-size: 1.25rem;"><b>{{user.name}}</b></span> &#8226;
+                                    <span style="color: grey;">{{user.year}} Year</span>
+                                    <br>
+                                    <span style="font-size: 0.8rem;">{{user.college}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container" style="margin-top: 1.5rem;">
+                        <h5 style="margin-bottom: 0;">Extra Information:</h5>
+                        <div class="row">
+                            <span class="col-lg-6 post-info">Team Size:</span><span class="col-lg-6 post-info">{{post.team_size}}</span>
+                            <span class="col-lg-6 post-info">{{post.type}} Deadline:</span><span class="col-lg-6 post-info">{{post.deadline}}</span>
+                            <span class="col-lg-6 post-info">Eligible Years:</span><span class="col-lg-6 post-info">{{post.eligible_years}}</span>
+                            <span class="col-lg-6 post-info">Eligible Colleges:</span>
+                            <span *ngIf="post.own_college" class="col-lg-6 post-info">{{user.college}}</span>
+                            <span *ngIf="!post.own_college" class="col-lg-6 post-info">All</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

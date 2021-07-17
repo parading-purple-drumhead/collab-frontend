@@ -1,4 +1,4 @@
-.row{
+.row {
     margin-top: 2rem;
 }
 
@@ -6,12 +6,12 @@
     margin-bottom: 2rem;
 }
 
-.card{
+.card {
     border: 1px solid #ff7e67;
     border-radius: 0.5rem;
 }
 
-img{
+img {
     border-radius: 0.5rem 0.5rem 0rem 0rem;
 }
 
@@ -29,4 +29,14 @@ img{
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
-  }
+}
+
+.tech-stack{
+    height: 5rem;
+}
+
+@media screen and (max-width: 320px) {
+    .tech-stack{
+        height: 8rem;
+    }
+}

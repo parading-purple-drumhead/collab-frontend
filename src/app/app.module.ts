@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LandingComponent } from './landing/landing.component';
 import { DiscoverComponent } from './discover/discover.component';
+import { PostDetailsComponent } from './post-details/post-details.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { DiscoverComponent } from './discover/discover.component';
     AppComponent,
     NavbarComponent,
     LandingComponent,
-    DiscoverComponent
+    DiscoverComponent,
+    PostDetailsComponent
   ],
   imports: [
     BrowserModule,

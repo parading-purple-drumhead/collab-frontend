@@ -11,14 +11,16 @@
                 </div>
                 <div class="card-body">
                     <br>
-                    <span *ngFor="let tech of post.tech_stack" class="card-text" style="margin: 0;">
-                        <span class="card-chip">{{tech}}</span>&nbsp;
-                    </span>
+                    <div class="tech-stack">
+                        <span *ngFor="let tech of post.tech_stack" class="card-text" style="margin: 0;">
+                            <span class="card-chip">{{tech}}</span>&nbsp;
+                        </span>
+                    </div>
                     <p class="limit">{{post.description}}</p>
                     <span><b>Applications Close On:</b> {{post.last_date}}</span>
                     <br><br>
                     <a href="#" class="float-start primary-pink-text">Report</a>
-                    <a href="#" class="btn primary-outline-button float-end">Expand</a>
+                    <a [routerLink]="post._id" class="btn primary-outline-button float-end">Expand</a>
                 </div>
             </div>
         </div>

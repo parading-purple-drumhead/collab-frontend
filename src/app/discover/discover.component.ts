@@ -26,7 +26,7 @@ export class DiscoverComponent implements OnInit {
       title: "Post Title 2",
       type: "Hackathon",
       cover: "https://images.unsplash.com/photo-1569098644584-210bcd375b59?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
-      tech_stack: ["Angular", "MongoDB", "Node.js", "Express.js", "Firebase"],
+      tech_stack: ["Flutter", "FastAPI", "Firebase"],
       description: "Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.",
       last_date: "20 Jun, 2021"
     },
@@ -35,7 +35,7 @@ export class DiscoverComponent implements OnInit {
       title: "Post Title 3",
       type: "Internship",
       cover: "https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
-      tech_stack: ["Angular", "MongoDB", "Node.js", "Express.js", "Firebase"],
+      tech_stack: ["React.js", "MongoDB", "Node.js", "Express.js", "Amazon Web Services"],
       description: "Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.",
       last_date: "20 Jun, 2021"
     },
